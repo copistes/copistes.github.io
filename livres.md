@@ -2,6 +2,8 @@
 
 [Retour](./index.html) 
 
+<script src="https://github.com/futurepress/epub.js/releases/download/v0.3.88/epub.legacy.min.js"></script>
+
 ----------------------------
 
 ## Vie de la Bienheureuse Marguerite-Marie Alacoque
@@ -21,6 +23,14 @@
 - [Format Markdown (texte enrichi)](https://github.com/copistes/alacoque/blob/main/texte.md)
 - [Format WORD (DOCX)](https://github.com/copistes/alacoque/releases/download/0.2/alacoque.docx)
 - [Format PDF](https://github.com/copistes/alacoque/releases/download/0.2/alacoque.pdf)
+
+### Lire en Ligne
+
+<script>
+  var book = ePub("ebooks/alacoque.epub");
+  var rendition = book.renderTo("area", {width: 600, height: 400});
+  var displayed = rendition.display();
+</script>
 
 ----------------------------
 
